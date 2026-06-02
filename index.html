@@ -1910,50 +1910,48 @@ hero-photo-bg{
 
 /* === MOBILE HERO FIX === */
 @media (max-width: 768px) {
-	/* Вирівнювання по лівому краю */
-	.hero .hero__content,
-	.hero__badges,
-	.hero__title,
-	.hero__description,
-	.hero__buttons {
+	.hero {
+		text-align: left !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+	.hero .hero-inner,
+	.hero .hero-inner > div {
 		text-align: left !important;
 	}
-
-	/* Розмір заголовку */
-	.hero__title h1,
-	.hero__title,
-	.hero h1 {
-		font-size: clamp(2.4rem, 9vw, 3.2rem) !important;
+	.hero h1,
+	.hero h1 span,
+	.hero .h1-row span {
+		font-size: clamp(1.8rem, 7.5vw, 2.6rem) !important;
 		line-height: 1.05 !important;
-		word-break: break-word;
+		word-break: break-word !important;
+		letter-spacing: -.02em !important;
 	}
-
-	/* Опис — лівий край, нормальний розмір */
-	.hero__description,
+	.hero .hero-lead,
 	.hero p {
 		text-align: left !important;
-		font-size: 1rem !important;
-		line-height: 1.6 !important;
+		font-size: 0.95rem !important;
+		line-height: 1.5 !important;
 	}
-
-	/* Кнопки — в ряд, не по центру */
-	.hero__buttons {
+	.hero .hero-badges {
 		justify-content: flex-start !important;
-		flex-wrap: wrap;
-		gap: 12px;
+		margin-bottom: 24px !important;
 	}
-
-	/* Флоат-кнопки месенджерів — менші, не перекривають текст */
-	.floating-buttons,
-	.social-float,
-	[class*="float"] {
-		right: 8px !important;
-		bottom: 80px !important;
+	.hero .hero-ctas {
+		justify-content: flex-start !important;
+		margin-top: 20px !important;
 	}
-	.floating-buttons a,
-	[class*="float"] a {
-		width: 42px !important;
-		height: 42px !important;
+	.hero .hero-stats {
+		justify-content: flex-start !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+@media (max-width: 400px) {
+	.hero h1,
+	.hero h1 span,
+	.hero .h1-row span {
+		font-size: clamp(1.5rem, 7vw, 1.8rem) !important;
 	}
 }
 /* === END MOBILE HERO FIX === */
