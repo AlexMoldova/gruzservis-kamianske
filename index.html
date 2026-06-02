@@ -1906,6 +1906,58 @@ hero-photo-bg{
   }
 }
 /* === END HERO TITLE MOBILE === */
+
+/* ===== HERO MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+ /* Весь контент — по лівому краю */
+ .hero,
+ .hero__content,
+ .hero__inner,
+ .hero__text {
+ text-align: left !important;
+ align-items: flex-start !important;
+ }
+
+ /* Заголовок — великий, чіткий */
+ .hero h1,
+ .hero__title {
+ font-size: clamp(2.6rem, 10vw, 3.4rem) !important;
+ line-height: 1.05 !important;
+ text-align: left !important;
+ word-break: break-word !important;
+ white-space: normal !important;
+ max-width: 100% !important;
+ margin-left: 0 !important;
+ }
+
+ /* Опис — лівий край, читабельний */
+ .hero p,
+ .hero__description {
+ text-align: left !important;
+ font-size: 1rem !important;
+ line-height: 1.65 !important;
+ max-width: 100% !important;
+ margin-left: 0 !important;
+ }
+
+ /* Бейджі ONLINE / КАМ'ЯНСЬКЕ / ВИЇЗД — лівий край */
+ .hero__badges,
+ .hero-badges {
+ justify-content: flex-start !important;
+ flex-wrap: wrap !important;
+ text-align: left !important;
+ }
+
+ /* Кнопки — лівий край */
+ .hero__buttons {
+ justify-content: flex-start !important;
+ flex-wrap: wrap !important;
+ gap: 12px !important;
+ }
+
+}
+/* ===== END HERO MOBILE FIX ===== */
 </style>
 </head>
 <body>
