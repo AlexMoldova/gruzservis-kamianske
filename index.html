@@ -263,7 +263,7 @@ body::before{
   padding:80px 32px 100px;
   overflow:hidden;
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   border-bottom:1px solid var(--line);
 }
 
@@ -322,15 +322,15 @@ body::before{
 }
 
 .hero-inner{
-  display:grid;
-  grid-template-columns:1fr 1fr;
+  display:flex;
   align-items:center;
-  gap:60px;
-  max-width:1280px;
+  justify-content:center;
+  max-width:900px;
   margin:0 auto;
   width:100%;
   padding:32px;
   position:relative;z-index:2;
+  text-align:center;
 }
 
 /* Badges */
@@ -1398,7 +1398,7 @@ section{position:relative;z-index:2}
   font-size:19px;
   margin-bottom:48px;
   max-width:580px;
-  
+  margin-left:auto;margin-right:auto;
   font-weight:500;
 }
 .cta-phone{
@@ -1588,7 +1588,7 @@ a.contact-info-val:hover{color:var(--accent)}
   margin-top:14px;
   display:flex;
   align-items:center;
-  justify-content:flex-start;
+  justify-content:center;
   gap:12px;
   letter-spacing:.02em;
   position:relative;
@@ -1685,7 +1685,7 @@ footer{
 .float-btn{
   width:44px;height:44px;
   border-radius:50%;
-  display:flex;align-items:center;justify-content:flex-start;
+  display:flex;align-items:center;justify-content:center;
   color:#fff;
   text-decoration:none;
   box-shadow:0 4px 12px rgba(0,0,0,.3);
@@ -1880,30 +1880,6 @@ hero-photo-bg{
 .hero.hero-photo-bg .hero-stats{border-color:rgba(255,255,255,.15) !important}
 .hero.hero-photo-bg .btn-ghost{color:#fff !important;border-color:rgba(255,255,255,.3) !important;background:rgba(0,0,0,.2) !important}
 
-
-@media(max-width:768px){
-  .hero-inner{
-    grid-template-columns:1fr !important;
-    text-align:center !important;
-  }
-  .hero-inner .hero-badges,
-  .hero-inner .hero-ctas,
-  .hero-inner .hero-stats{
-    justify-content:center !important;
-  }
-  .hero-inner .hero-lead{
-    margin-left:auto !important;
-    margin-right:auto !important;
-  }
-  .hero-inner h1{
-    align-items:center !important;
-  }
-  .hero-visual{
-    max-width:480px;
-    margin:0 auto;
-  }
-}
-
 </style>
 </head>
 <body>
@@ -2010,19 +1986,6 @@ hero-photo-bg{
           <span class="hero-photo-badge">24/7</span>
           <span class="hero-photo-badge accent">ВИЇЗД ЗА 30 ХВ</span>
 
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- 🎨 ФОТО -->
-    <div class="hero-visual">
-      <div class="hero-photo-wrap">
-        <img src="images/gruzservis-truck.jpg" alt="ГрузСервіс — вантажівка Кам'янське" class="hero-photo">
-        <div class="hero-photo-badges">
-          <span class="hero-photo-badge">24/7</span>
-          <span class="hero-photo-badge accent">ВИЇЗД ЗА 30 ХВ</span>
-          <span class="hero-photo-badge">🚛 до 3 тон</span>
         </div>
       </div>
     </div>
