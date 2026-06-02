@@ -63,7 +63,7 @@
 html{scroll-behavior:smooth;cursor:auto;overflow-x:hidden}
 @media (hover:none){html{cursor:auto}}
 body{
-  background:var(--bg);
+  background:#0d1117;
   color:var(--text);
   font-family:var(--font-b);
   font-weight:400;
@@ -1048,7 +1048,7 @@ section{position:relative;z-index:2}
 @media(max-width:480px){.features-strip{grid-template-columns:1fr}}
 
 .feature-item{
-  background:var(--bg);
+  background:#0d1117;
   padding:40px 32px;
   transition:background .4s;
   position:relative;
@@ -1558,7 +1558,7 @@ a.contact-info-val:hover{color:var(--accent)}
 .form-field textarea{
   width:100%;
   padding:16px 18px;
-  background:var(--bg);
+  background:#0d1117;
   border:1px solid var(--line);
   color:var(--text);
   font-family:var(--font-b);
@@ -1846,6 +1846,55 @@ hero-photo-bg{
 .hero.hero-photo-bg .hero-badge { color:rgba(255,255,255,.85) !important; border-color:rgba(255,255,255,.3) !important; }
 .hero.hero-photo-bg .hero-stat-label { color:rgba(255,255,255,.65) !important; }
 .hero.hero-photo-bg .btn-ghost { color:#fff !important; border-color:rgba(255,255,255,.3) !important; }
+
+
+/* ═══ ВСЕ ЧИТАБЕЛЬНО: темний фон + світлий текст ═══ */
+body, section, .section, .features-bg, footer, .nav{
+  background-color:#0d1117 !important;
+  color:#e6edf3 !important;
+}
+h1,h2,h3,h4{color:#f0f6fc !important}
+p,li,span,label{color:#c9d1d9 !important}
+.text-dim,a{color:#8b949e !important}
+.section-num{color:#58a6ff !important}
+.section-title{color:#f0f6fc !important}
+.section-title .accent{color:#58a6ff !important}
+.section-desc{color:#8b949e !important}
+.service-card{background:#161b22 !important;border-color:#21262d !important}
+.service-card h3{color:#e6edf3 !important}
+.service-card p{color:#8b949e !important}
+.service-card-num{color:#58a6ff !important}
+.feature-item{background:#161b22 !important;border-color:#21262d !important}
+.feature-item h3{color:#e6edf3 !important}
+.feature-item p{color:#8b949e !important}
+.form-card{background:#161b22 !important;border-color:#21262d !important}
+.form-card h3{color:#f0f6fc !important}
+.form-card p{color:#8b949e !important}
+.form-field input,.form-field select,.form-field textarea{
+  background:#0d1117 !important;border-color:#30363d !important;color:#c9d1d9 !important
+}
+.contact-info-label{color:#8b949e !important}
+.contact-info-val{color:#e6edf3 !important}
+footer{background:#0d1117 !important;border-color:#21262d !important}
+.footer-col h4{color:#58a6ff !important}
+.footer-col a,.footer-col p{color:#8b949e !important}
+footer p,footer span{color:#8b949e !important}
+.faq-item{background:#161b22 !important;border-color:#21262d !important}
+.faq-item h4{color:#e6edf3 !important}
+.faq-item p{color:#8b949e !important}
+.review-card{background:#161b22 !important;border-color:#21262d !important}
+.review-card p{color:#c9d1d9 !important}
+/* Hero stays special dark blue */
+.hero.hero-photo-bg{
+  background:linear-gradient(160deg, #0a1628 0%, #112240 40%, #0a192f 100%) !important;
+}
+.hero.hero-photo-bg h1,.hero.hero-photo-bg h1 span{color:#fff !important}
+.hero.hero-photo-bg .hero-lead{color:#a8c8f0 !important}
+.hero.hero-photo-bg .hero-badge{color:#c9d1d9 !important;border-color:rgba(255,255,255,.2) !important}
+.hero.hero-photo-bg .hero-stat-label{color:#8b949e !important}
+.hero.hero-photo-bg .h1-row .stroke{
+  -webkit-text-stroke:2px rgba(255,255,255,.8) !important;color:transparent !important
+}
 
 </style>
 </head>
