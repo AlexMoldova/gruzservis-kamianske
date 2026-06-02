@@ -324,7 +324,7 @@ body::before{
 .hero-inner{
   display:grid;
   grid-template-columns:1fr 1fr;
-  align-items:flex-start;
+  align-items:center;
   gap:60px;
   max-width:1280px;
   margin:0 auto;
@@ -1291,7 +1291,7 @@ section{position:relative;z-index:2}
   padding:24px 32px;
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
+  align-items:center;
   gap:24px;
   font-family:var(--font-d);
   font-size:17px;
@@ -1403,7 +1403,7 @@ section{position:relative;z-index:2}
 }
 .cta-phone{
   display:inline-flex;
-  align-items:flex-start;
+  align-items:center;
   gap:20px;
   padding:26px 44px;
   background:#fff;
@@ -1587,7 +1587,7 @@ a.contact-info-val:hover{color:var(--accent)}
   transition:transform .3s, box-shadow .3s;
   margin-top:14px;
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   justify-content:flex-start;
   gap:12px;
   letter-spacing:.02em;
@@ -1660,7 +1660,7 @@ footer{
 .footer-bottom{
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
+  align-items:center;
   flex-wrap:wrap;
   gap:14px;
   font-family:var(--font-m);
@@ -1680,7 +1680,7 @@ footer{
   display:flex;
   flex-direction:column;
   gap:10px;
-  align-items:flex-start;
+  align-items:center;
 }
 .float-btn{
   width:44px;height:44px;
@@ -1765,7 +1765,7 @@ hero-photo-bg{
   min-height:100vh;
   overflow:hidden;
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   background:linear-gradient(160deg, #060d18 0%, #0a1425 30%, #0d1a32 60%, #0a1425 100%);
 }
 
@@ -1796,7 +1796,7 @@ hero-photo-bg{
   color:transparent;
 }
 /* Gallery placeholders */
-.gallery-item > div{display:flex;align-items:center;justify-content:flex-start;min-height:300px}
+.gallery-item > div{display:flex;align-items:center;justify-content:center;min-height:300px}
 .gallery-item.tall > div{min-height:500px}
 .gallery-item img{display:none}
 
@@ -2015,7 +2015,7 @@ hero-photo-bg{
     </div>
   </div>
 
-    <!-- 🎨 ФОТО-СЦЕНА -->
+    <!-- 🎨 ФОТО -->
     <div class="hero-visual">
       <div class="hero-photo-wrap">
         <img src="images/gruzservis-truck.jpg" alt="ГрузСервіс — вантажівка Кам'янське" class="hero-photo">
@@ -2029,3 +2029,711 @@ hero-photo-bg{
   </div>
 </section>
 
+<!-- 🎵 MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Квартирні переїзди</span>
+    <span class="marquee-item">Офісні переїзди</span>
+    <span class="marquee-item">Підйом вантажу</span>
+    <span class="marquee-item">Перевезення меблів</span>
+    <span class="marquee-item">Доставка з магазинів</span>
+    <span class="marquee-item">Послуги вантажників</span>
+    <span class="marquee-item">Квартирні переїзди</span>
+    <span class="marquee-item">Офісні переїзди</span>
+    <span class="marquee-item">Підйом вантажу</span>
+    <span class="marquee-item">Перевезення меблів</span>
+    <span class="marquee-item">Доставка з магазинів</span>
+    <span class="marquee-item">Послуги вантажників</span>
+  </div>
+</div>
+
+<!-- 🛠 SERVICES -->
+
+<!-- 🚛 ФОТО ГРУЗ-СЕРВІС -->
+<section class="section" style="padding-bottom:0;">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num"><span></span>НАША ТЕХНІКА</div>
+      <h2 class="section-title">ГРУЗ·СЕРВІС — <span class="accent">професійний підхід</span></h2>
+    </div>
+    <p class="section-desc">Власний автопарк, акуратне транспортування, відповідальна команда. Ваші речі в надійних руках.</p>
+  </div>
+  
+  <div class="truck-showcase reveal" style="max-width:1200px;margin:0 auto;">
+    <div style="position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);border:1px solid var(--line);">
+      <img src="images/gruzservis-truck.jpg" alt="ГрузСервіс — вантажівка Кам'янське" style="width:100%;height:auto;display:block;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:50px 40px 30px;background:linear-gradient(transparent 0%, rgba(0,0,0,.7) 60%, rgba(0,0,0,.9) 100%);display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;">
+        <div>
+          <span style="background:var(--accent);color:#fff;padding:6px 18px;border-radius:30px;font-size:14px;font-weight:700;letter-spacing:.02em;">🚛 ДО 3 ТОН</span>
+          <p style="color:#fff;font-size:15px;margin-top:12px;max-width:400px;opacity:.85;line-height:1.5;">Квартирні та офісні переїзди, вивіз сміття, доставка меблів</p>
+        </div>
+        <a href="tel:+380933715458" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;padding:16px 32px;border-radius:50px;font-weight:700;font-size:16px;text-decoration:none;transition:transform .3s,box-shadow .3s;box-shadow:0 10px 30px -8px rgba(var(--accent-glow),.5);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          📞 +38 (093) 371-54-58
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="services">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num"><span></span>01 / ПОСЛУГИ</div>
+      <h2 class="section-title">Що ми <span class="accent">робимо</span></h2>
+    </div>
+    <p class="section-desc">Повний спектр вантажних послуг у Кам'янському. Працюємо швидко, акуратно, без пошкоджень.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card reveal" data-tilt>
+      <div class="service-card-num">01</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <h3>Квартирні<br>переїзди</h3>
+      <p>Перевеземо ваші речі до нової квартири швидко та акуратно. Пакування, завантаження, транспортування, розвантаження.</p>
+      <div class="service-card-foot">
+        <div class="service-price">
+          <small>від</small>
+          800 ₴
+        </div>
+        <div class="service-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card reveal" data-tilt>
+      <div class="service-card-num">02</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <path d="M8 21h8"/>
+          <path d="M12 17v4"/>
+        </svg>
+      </div>
+      <h3>Офісні<br>переїзди</h3>
+      <p>Організуємо переїзд вашого офісу без простою в роботі. Меблі, оргтехніка, документація — все під контролем.</p>
+      <div class="service-card-foot">
+        <div class="service-price">
+          <small>від</small>
+          1 200 ₴
+        </div>
+        <div class="service-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card reveal" data-tilt>
+      <div class="service-card-num">03</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <h3>Переїзди<br>будинків/дач</h3>
+      <p>Великогабаритні перевезення заміських будинків та дач. Надійна техніка для будь-яких об'ємів.</p>
+      <div class="service-card-foot">
+        <div class="service-price">
+          <small>від</small>
+          1 500 ₴
+        </div>
+        <div class="service-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card reveal" data-tilt>
+      <div class="service-card-num">04</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+      </div>
+      <h3>Пакування<br>речей</h3>
+      <p>Професійне пакування крихких та габаритних предметів. Коробки, стрейч-плівка, захист меблів.</p>
+      <div class="service-card-foot">
+        <div class="service-price">
+          <small>від</small>
+          500 ₴
+        </div>
+        <div class="service-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card reveal" data-tilt>
+      <div class="service-card-num">05</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+        </svg>
+      </div>
+      <h3>Демонтаж<br>та винос</h3>
+      <p>Демонтаж старих меблів, сантехніки, дверей. Винос непотрібного майна з приміщення.</p>
+      <div class="service-card-foot">
+        <div class="service-price">
+          <small>від</small>
+          600 ₴
+        </div>
+        <div class="service-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card reveal" data-tilt>
+      <div class="service-card-num">06</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s-8-4.5-8-12a8 8 0 1116 0c0 7.5-8 12-8 12z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <h3>Вивіз сміття</h3>
+      <p>Оперативний вивіз будівельного та побутового сміття. Окрема машина для великих об'ємів.</p>
+      <div class="service-card-foot">
+        <div class="service-price">
+          <small>від</small>
+          400 ₴
+        </div>
+        <div class="service-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 📸 ФОТО ГРУЗ-СЕРВІС -->
+
+
+
+<!-- 🚛 ОКРЕМА МАШИНА ДО 3 ТОН -->
+<section class="features-bg" id="truck">
+  <div style="padding:80px 32px;text-align:center;max-width:900px;margin:0 auto;">
+    <div style="font-size:64px;margin-bottom:16px;display:block;animation:bounce 2s infinite;">🚛</div>
+    <h2 style="font-family:var(--font-d);font-size:clamp(36px,5vw,64px);line-height:.95;text-transform:uppercase;letter-spacing:-.025em;margin-bottom:16px;">
+      Окрема машина <span style="color:var(--accent);font-family:var(--font-serif);font-style:italic;font-weight:700;">до 3 тон</span>
+    </h2>
+    <p style="color:var(--text-dim);font-size:18px;line-height:1.6;max-width:650px;margin:0 auto 30px;">
+      Потрібна окрема машина для вашого переїзду? Надаємо авто вантажопідйомністю <strong>до 3 тонн</strong>.
+      Ідеально для: квартирні переїзди, вивіз сміття, доставка меблів, перевезення будматеріалів.
+    </p>
+    <a href="tel:+380933715458" style="display:inline-flex;align-items:center;gap:16px;padding:22px 48px;background:#ff6f00;color:#fff;font-weight:700;font-size:20px;border-radius:60px;transition:transform .3s,box-shadow .3s;box-shadow:0 8px 30px -8px rgba(255,111,0,.6);text-decoration:none;" 
+       onmouseover="this.style.transform='scale(1.08)';this.style.boxShadow='0 16px 40px -8px rgba(255,111,0,.8)'" 
+       onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 8px 30px -8px rgba(255,111,0,.6)'">
+      📞 Замовити машину — +38 (093) 371-54-58
+    </a>
+    <p style="color:var(--text-dim);font-size:14px;margin-top:24px;">Працюємо 24/7 · Без передоплати · Виїзд за 30 хв</p>
+  </div>
+</section>
+
+<!-- 📸 ГАЛЕРЕЯ -->
+
+
+<!-- 💎 FEATURES -->
+<section class="features-bg" id="features">
+  <div class="section">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num"><span></span>02 / ПЕРЕВАГИ</div>
+        <h2 class="section-title">Чому <span class="accent">обирають нас</span></h2>
+      </div>
+      <p class="section-desc">Чому обирають нас серед інших вантажних компаній Кам'янського.</p>
+    </div>
+
+    <div class="features-strip reveal">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s-8-4.5-8-12a8 8 0 1116 0c0 7.5-8 12-8 12z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <h3>Виїзд за 30 хв</h3>
+        <p>Терміновий виїзд у Кам'янському. Дзвоніть — приїжджаємо за 30 хвилин.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+        </div>
+        <h3>Без пошкоджень</h3>
+        <p>Відповідально ставимось до ваших речей. Кожна річ в цілості.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="5" width="20" height="14" rx="2"/>
+            <path d="M2 10h20"/>
+          </svg>
+        </div>
+        <h3>Без передоплати</h3>
+        <p>Платите за результат. Жодних передоплат — оплата після виконання.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 17h2l2-5h8l2 5h2"/>
+            <circle cx="7" cy="19" r="2"/>
+            <circle cx="17" cy="19" r="2"/>
+          </svg>
+        </div>
+        <h3>Свій автопарк</h3>
+        <p>Власний автопарк — машина будь-якого розміру під ваше замовлення.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🚀 PROCESS -->
+<section class="section" id="process">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num"><span></span>03 / ЯК МИ ПРАЦЮЄМО</div>
+      <h2 class="section-title">Від дзвінка до <span class="accent">результату</span></h2>
+    </div>
+    <p class="section-desc">4 простих кроки. Без бюрократії та прихованих умов.</p>
+  </div>
+
+  <div class="process-wrap reveal">
+    <div class="process-line"></div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <h3>Дзвінок</h3>
+        <p>Телефонуєте — за 2 хвилини обговорюємо об'єм робіт та час приїзду.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <h3>Розрахунок</h3>
+        <p>Називаємо точну вартість без прихованих доплат. Фіксуємо час виїзду.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <h3>Виконання</h3>
+        <p>Виїжджаємо, акуратно пакуємо, завантажуємо та перевозимо ваші речі.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <h3>Готово</h3>
+        <p>Все на місці. Оплата готівкою або карткою — без передоплати.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⭐ TESTIMONIALS -->
+<section class="features-bg" id="reviews">
+  <div class="section">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num"><span></span>04 / ВІДГУКИ</div>
+        <h2 class="section-title">Що кажуть <span class="accent">клієнти</span></h2>
+      </div>
+      <p class="section-desc">Реальні відгуки наших клієнтів. 1500+ виконаних переїздів.</p>
+    </div>
+
+    <div class="testimonials">
+
+      <div class="testimonial reveal">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+        </div>
+        <p class="testimonial-text">Замовляв квартирний переїзд у Кам'янському. Хлопці приїхали вчасно, все запакували, перевезли — жодної подряпини. Дуже задоволений!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">О</div>
+          <div class="testimonial-author-info">
+            <strong>АНДРІЙ</strong>
+            <span>// Квартирний переїзд, Кам'янське</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial reveal">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+        </div>
+        <p class="testimonial-text">Перевозили офісні меблі та техніку. Все швидко та професійно. Окреме спасибі за акуратне пакування оргтехніки. Рекомендую!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">М</div>
+          <div class="testimonial-author-info">
+            <strong>СЕРГІЙ</strong>
+            <span>// Офісний переїзд, Кам'янське</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial reveal">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+        </div>
+        <p class="testimonial-text">Треба було вивезти будівельне сміття після ремонту. Подзвонив — через 30 хв вже були. Окрема машина, все завантажили та вивезли. Ціна приємно порадувала!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">Т</div>
+          <div class="testimonial-author-info">
+            <strong>ІГОР</strong>
+            <span>// Вивіз сміття, Кам'янське</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ❓ FAQ -->
+<section class="section" id="faq">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num"><span></span>05 / ЧАСТІ ПИТАННЯ</div>
+      <h2 class="section-title">Питання та <span class="accent">відповіді</span></h2>
+    </div>
+    <p class="section-desc">Найчастіші питання наших клієнтів. Якщо вашого немає — напишіть у месенджер.</p>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span>Як швидко ви виїжджаєте?</span>
+        <div class="faq-toggle"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Виїжджаємо протягом 30 хвилин після дзвінка по Кам'янському. Працюємо цілодобово, без вихідних та свят.</div>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span>Які машини у вас є?</span>
+        <div class="faq-toggle"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Маємо власний автопарк: окрема машина до 3 тон. Підберемо транспорт під ваш об'єм речей.</div>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span>Ви пакуєте речі?</span>
+        <div class="faq-toggle"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Так, надаємо послуги пакування. Пакувальні матеріали (коробки, стрічка, плівка) у вартості або окремо за домовленістю. Також робимо демонтаж та винос старих меблів.</div>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span>Як оплачувати?</span>
+        <div class="faq-toggle"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Готівкою, банківською карткою або безготівковим розрахунком. Працюємо без передоплати — оплата після виконання роботи.</div>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <div class="faq-question">
+        <span>Працюєте у вихідні?</span>
+        <div class="faq-toggle"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">Так, працюємо 24/7 без вихідних та свят. У вихідні та нічний час — без додаткових націнок.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 📞 CTA BAND -->
+<section class="cta-band">
+  <div class="cta-band-inner reveal">
+    <h2>Замовте перевезення<br><em>зараз</em>!</h2>
+    <p>Телефонуйте — приймемо заявку за 60 секунд. Виїзд за 30 хвилин, цілодобово, без вихідних.</p>
+    <a href="tel:+380933715458" class="cta-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/>
+      </svg>
+      +38 (093) 371-54-58
+    </a>
+  </div>
+</section>
+
+<!-- 📬 CONTACT -->
+<section class="section" id="contact">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num"><span></span>06 / КОНТАКТИ</div>
+      <h2 class="section-title">Залиште <span class="accent">заявку</span></h2>
+    </div>
+    <p class="section-desc">Телефонуйте або пишіть — відповімо на всі питання. Працюємо 24/7.</p>
+  </div>
+
+  <div class="contact-wrap">
+    <div class="reveal-left">
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <div style="flex:1">
+          <div class="contact-info-label">Телефон та месенджери</div>
+          <a href="tel:+380933715458" class="contact-info-val">+38 (093) 371-54-58</a>
+          <div class="messenger-buttons">
+            <a href="viber://chat?number=%2B380933715458" class="msg-btn msg-btn-viber">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6.6 4.8c-.7 0-1.4.3-1.9 1L3.3 7.4c-.6.7-.9 1.6-.7 2.5.4 1.7 1.4 4.4 4.1 7.1 2.7 2.7 5.4 3.7 7.1 4.1.9.2 1.8-.1 2.5-.7l1.6-1.4c1-.9 1-2.4 0-3.3l-1.7-1.5c-.7-.7-1.8-.8-2.7-.3l-.6.3c-.4.2-.9.1-1.2-.2l-2.7-2.7c-.3-.3-.4-.8-.2-1.2l.3-.6c.5-.9.4-2-.3-2.7L7.4 5.1c-.2-.2-.5-.3-.8-.3z" fill="currentColor"/>
+                <path d="M14 6.5a4 4 0 014 4M14 3.5a7 7 0 017 7M14 9.5a1 1 0 011 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              <span>Viber</span>
+            </a>
+            <a href="https://wa.me/380933715458" target="_blank" rel="noopener" class="msg-btn msg-btn-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://t.me/+380933715458" target="_blank" rel="noopener" class="msg-btn msg-btn-telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.473-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+              <span>Telegram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s-8-4.5-8-12a8 8 0 1116 0c0 7.5-8 12-8 12z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Зона роботи</div>
+          <div class="contact-info-val" style="font-size:17px">Кам'янське та область</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <div>
+          <div class="contact-info-label">Режим роботи</div>
+          <div class="contact-info-val" style="font-size:17px">Цілодобово · 7 днів</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card reveal-right">
+      <h3>Швидка заявка</h3>
+      <p>Передзвонимо за 5 хвилин і обговоримо вашу задачу.</p>
+      <form id="lead-form" method="POST" action="https://formsubmit.co/(змініть на свою пошту)">
+        <input type="hidden" name="_subject" value="Нова заявка з сайту ГРУЗ·СЕРВІС" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="form-field">
+          <label>Ваше ім'я</label>
+          <input type="text" name="Імʼя" placeholder="Як до вас звертатися" required>
+        </div>
+        <div class="form-field">
+          <label>Телефон</label>
+          <input type="tel" name="Телефон" placeholder="+380 __ ___ __ __" required>
+        </div>
+        <div class="form-field">
+          <label>Послуга</label>
+          <select name="Послуга">
+            <option>Квартирний переїзд, Кам'янське</option>
+            <option>Офісний переїзд, Кам'янське</option>
+            <option>Підйом вантажу</option>
+            <option>Перевезення меблів</option>
+            <option>Доставка магазинів</option>
+            <option>Інше — потрібна консультація</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Коментар</label>
+          <textarea name="Коментар" placeholder="Адреса, деталі, бажаний час..."></textarea>
+        </div>
+        <button type="submit">
+          Надіслати заявку
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 🦶 FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12l2-2 4 4 8-8 4 4"/>
+            </svg>
+          </div>
+          <span>ГРУЗ<b>·</b>СЕРВІС</span>
+        </a>
+        <p>Вантажні перевезення до 3 тон у Кам'янському. Квартирні та офісні переїзди, підйом вантажу. Працюємо швидко, акуратно, без пошкоджень. Понад 8 років досвіду.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Послуги</h4>
+        <a href="#services">Квартирні переїзди</a>
+        <a href="#services">Офісні переїзди</a>
+        <a href="#services">Підйом вантажу</a>
+        <a href="#services">Перевезення меблів</a>
+        <a href="#services">Доставка магазинів</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Компанія</h4>
+        <a href="#services">Послуги</a>
+        <a href="#features">Переваги</a>
+        <a href="#process">Процес</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакти</h4>
+        <a href="tel:+380933715458">+38 (093) 371-54-58</a>
+        <a href="viber://chat?number=%2B380933715458">Viber</a>
+        <a href="https://wa.me/380933715458" target="_blank">WhatsApp</a>
+        <a href="https://t.me/+380933715458" target="_blank">Telegram</a>
+        <p>Кам'янське</p>
+        <p>Пн–Нд: 24/7, Без вихідних</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 ГРУЗ·СЕРВІС — УСІ ПРАВА ЗАХИЩЕНІ</div>
+      <div>// КАМ'ЯНСЬКЕ · ДО 3 ТОН</div>
+    </div>
+  </div>
+</footer>
+
+<!-- 📱 FLOATING -->
+<div class="float-contacts">
+  <a href="tel:+380933715458" class="float-btn float-btn-call" aria-label="Зателефонувати">
+    <span class="float-btn-tooltip">Зателефонувати</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/>
+    </svg>
+  </a>
+  <a href="https://t.me/+380933715458" target="_blank" rel="noopener" class="float-btn float-btn-telegram" aria-label="Telegram">
+    <span class="float-btn-tooltip">Написати у Telegram</span>
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.473-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+    </svg>
+  </a>
+  <a href="viber://chat?number=%2B380933715458" class="float-btn float-btn-viber" aria-label="Viber">
+    <span class="float-btn-tooltip">Написати у Viber</span>
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M6.6 4.8c-.7 0-1.4.3-1.9 1L3.3 7.4c-.6.7-.9 1.6-.7 2.5.4 1.7 1.4 4.4 4.1 7.1 2.7 2.7 5.4 3.7 7.1 4.1.9.2 1.8-.1 2.5-.7l1.6-1.4c1-.9 1-2.4 0-3.3l-1.7-1.5c-.7-.7-1.8-.8-2.7-.3l-.6.3c-.4.2-.9.1-1.2-.2l-2.7-2.7c-.3-.3-.4-.8-.2-1.2l.3-.6c.5-.9.4-2-.3-2.7L7.4 5.1c-.2-.2-.5-.3-.8-.3z" fill="currentColor"/>
+      <path d="M14 6.5a4 4 0 014 4M14 3.5a7 7 0 017 7M14 9.5a1 1 0 011 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/380933715458" target="_blank" rel="noopener" class="float-btn float-btn-whatsapp" aria-label="WhatsApp">
+    <span class="float-btn-tooltip">Написати у WhatsApp</span>
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('scrollProgress').style.transform='scaleX('+(window.scrollY/h)+')';
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50);
+});
+if(window.matchMedia('(hover:hover)').matches){
+  const d=document.querySelector('.cursor-dot');
+  const r=document.querySelector('.cursor-ring');
+  document.addEventListener('mousemove',e=>{
+    d.style.transform='translate('+(e.clientX-3)+'px,'+(e.clientY-3)+'px)';
+    r.style.transform='translate('+(e.clientX-18)+'px,'+(e.clientY-18)+'px)';
+  });
+  document.querySelectorAll('a,button,.service-card,.float-btn').forEach(el=>{
+    el.addEventListener('mouseenter',()=>r.classList.add('is-active'));
+    el.addEventListener('mouseleave',()=>r.classList.remove('is-active'));
+  });
+}
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.1});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>observer.observe(el));
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>q.closest('.faq-item').classList.toggle('open'));
+});
+document.querySelectorAll('.hero-stat-num').forEach(el=>{
+  const target=+el.dataset.target;
+  const suffix=el.dataset.suffix||'';
+  const update=()=>{
+    const val=+el.textContent.replace(suffix,'').replace(/\+/g,'');
+    if(val<target){
+      el.textContent=Math.min(val+Math.ceil(target/30),target)+suffix;
+      requestAnimationFrame(update);
+    }
+  };
+  const obs=new IntersectionObserver(([e]) => {
+    if(e.isIntersecting){update();obs.disconnect()}
+  },{threshold:.5});
+  obs.observe(el);
+});
+
+// Diagnose horizontal overflow
+(function(){var e=document.body.getElementsByTagName('*'),w=window.innerWidth,d='';for(var i=0;i<e.length;i++){var r=e[i].getBoundingClientRect();if(r.right>w+1||r.left<-1){d+='<div style="background:red;color:#fff;padding:4px 8px;margin:2px 0;font-size:12px">['+e[i].tagName.toLowerCase()+(e[i].id?'#'+e[i].id:'')+(e[i].className?' .'+e[i].className.replace(/ /g,'.'):'')+'] right='+Math.round(r.right)+' left='+Math.round(r.left)+' width='+e[i].offsetWidth+'</div>'}}if(d){var p=document.createElement('div');p.style.cssText='position:fixed;top:0;left:0;z-index:99999;background:#000;color:#0f0;padding:10px;font-family:monospace;font-size:11px;max-height:80vh;overflow:auto';p.innerHTML='<b style="color:#f00">Overflow elements:</b><br>'+d;document.body.appendChild(p)}})();
+</script>
+
+</body>
+</html>
