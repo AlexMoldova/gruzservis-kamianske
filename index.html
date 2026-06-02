@@ -764,7 +764,7 @@ body::before{
 @media(max-width:600px){
   .hero{padding:50px 16px 60px;min-height:auto;width:100%;max-width:100vw}
   .hero-inner{width:100%;max-width:100%;grid-template-columns:1fr;gap:40px}
-  .hero-stats{gap:16px}
+  .hero-stats{gap:12px}
   .hero-stat-num{font-size:28px}
   .hero-visual{height:380px}
   .hero-card-1,.hero-card-2,.hero-card-3,.hero-card-4{width:160px;padding:18px}
@@ -1904,6 +1904,24 @@ hero-photo-bg{
   }
 }
 
+
+@media(max-width:375px){
+  .h1-row span{
+    font-size:clamp(28px,8vw,40px) !important;
+    letter-spacing:-.02em !important;
+  }
+  .hero-stats{
+    grid-template-columns:1fr 1fr 1fr !important;
+    gap:8px !important;
+  }
+  .hero-stat-num{
+    font-size:24px !important;
+  }
+  .hero-stat-label{
+    font-size:10px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1996,23 +2014,13 @@ hero-photo-bg{
           <div class="hero-stat-label">Виконано<br>переїздів</div>
         </div>
         <div>
-          <div class="hero-stat-num" data-target="100" data-suffix="%">0%</div>
+          <div class="hero-stat-num" data-target="98" data-suffix="%">0%</div>
           <div class="hero-stat-label">Задоволених<br>клієнтів</div>
         </div>
       </div>
     </div>
 
-    <!-- 🎨 ФОТО-СЦЕНА -->
-    <div class="hero-visual">
-      <div class="hero-photo-wrap">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#0d2137,#1a3a5f);border-radius:20px;"></div>
-        <div class="hero-photo-badges">
-          <span class="hero-photo-badge">24/7</span>
-          <span class="hero-photo-badge accent">ВИЇЗД ЗА 30 ХВ</span>
-
-        </div>
-      </div>
-    </div>
+    
   </div>
 
     <!-- 🎨 ФОТО -->
@@ -2571,7 +2579,7 @@ hero-photo-bg{
     <div class="form-card reveal-right">
       <h3>Швидка заявка</h3>
       <p>Передзвонимо за 5 хвилин і обговоримо вашу задачу.</p>
-      <form id="lead-form" method="POST" action="https://formsubmit.co/(змініть на свою пошту)">
+      <form id="lead-form" method="POST" action="https://formsubmit.co/digital.target.marketing24@gmail.com">
         <input type="hidden" name="_subject" value="Нова заявка з сайту ГРУЗ·СЕРВІС" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
@@ -2690,50 +2698,7 @@ hero-photo-bg{
   </a>
 </div>
 
-<script>
-window.addEventListener('scroll',()=>{
-  const h=document.documentElement.scrollHeight-window.innerHeight;
-  document.getElementById('scrollProgress').style.transform='scaleX('+(window.scrollY/h)+')';
-  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50);
-});
-if(window.matchMedia('(hover:hover)').matches){
-  const d=document.querySelector('.cursor-dot');
-  const r=document.querySelector('.cursor-ring');
-  document.addEventListener('mousemove',e=>{
-    d.style.transform='translate('+(e.clientX-3)+'px,'+(e.clientY-3)+'px)';
-    r.style.transform='translate('+(e.clientX-18)+'px,'+(e.clientY-18)+'px)';
-  });
-  document.querySelectorAll('a,button,.service-card,.float-btn').forEach(el=>{
-    el.addEventListener('mouseenter',()=>r.classList.add('is-active'));
-    el.addEventListener('mouseleave',()=>r.classList.remove('is-active'));
-  });
-}
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
-},{threshold:.1});
-document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>observer.observe(el));
-document.querySelectorAll('.faq-question').forEach(q=>{
-  q.addEventListener('click',()=>q.closest('.faq-item').classList.toggle('open'));
-});
-document.querySelectorAll('.hero-stat-num').forEach(el=>{
-  const target=+el.dataset.target;
-  const suffix=el.dataset.suffix||'';
-  const update=()=>{
-    const val=+el.textContent.replace(suffix,'').replace(/\+/g,'');
-    if(val<target){
-      el.textContent=Math.min(val+Math.ceil(target/30),target)+suffix;
-      requestAnimationFrame(update);
-    }
-  };
-  const obs=new IntersectionObserver(([e]) => {
-    if(e.isIntersecting){update();obs.disconnect()}
-  },{threshold:.5});
-  obs.observe(el);
-});
 
-// Diagnose horizontal overflow
-(function(){var e=document.body.getElementsByTagName('*'),w=window.innerWidth,d='';for(var i=0;i<e.length;i++){var r=e[i].getBoundingClientRect();if(r.right>w+1||r.left<-1){d+='<div style="background:red;color:#fff;padding:4px 8px;margin:2px 0;font-size:12px">['+e[i].tagName.toLowerCase()+(e[i].id?'#'+e[i].id:'')+(e[i].className?' .'+e[i].className.replace(/ /g,'.'):'')+'] right='+Math.round(r.right)+' left='+Math.round(r.left)+' width='+e[i].offsetWidth+'</div>'}}if(d){var p=document.createElement('div');p.style.cssText='position:fixed;top:0;left:0;z-index:99999;background:#000;color:#0f0;padding:10px;font-family:monospace;font-size:11px;max-height:80vh;overflow:auto';p.innerHTML='<b style="color:#f00">Overflow elements:</b><br>'+d;document.body.appendChild(p)}})();
-</script>
 
 </body>
 </html>
