@@ -1759,9 +1759,24 @@ footer{
   overflow:hidden;
   display:flex;
   align-items:center;
-  background:linear-gradient(135deg, #0a1628 0%, #1a2a4a 40%, #0d1f3c 100%);
 }
-.hero-photo-bg .hero-inner{z-index:3}
+.hero-photo-bg .hero-bg{
+  position:absolute;inset:0;z-index:0;
+}
+.hero-photo-bg .hero-bg img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.25) blur(3px);
+  transform:scale(1.05);
+}
+.hero-photo-bg .hero-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(135deg, 
+    rgba(10,22,40,.85) 0%, 
+    rgba(20,35,60,.75) 35%, 
+    rgba(15,30,50,.8) 65%, 
+    rgba(10,18,35,.9) 100%);
+}
+.hero-photo-bg .hero-inner{position:relative;z-index:2}
 .hero-photo-bg .hero h1{color:#fff}
 .hero-photo-bg .hero-lead{color:rgba(255,255,255,.75)}
 .hero-photo-bg .hero-badge{
@@ -1844,7 +1859,10 @@ footer{
 
 <!-- 🎬 HERO -->
 <section class="hero hero-photo-bg">
-
+  <div class="hero-bg">
+    <img src="images/gruz-truck-hero.jpg" alt="ГрузСервіс" loading="eager">
+  </div>
+  <div class="hero-overlay"></div>
 
   <div class="hero-inner">
     <div>
