@@ -1753,29 +1753,15 @@ footer{
 .reveal-scale.visible{opacity:1;transform:scale(1)}
 
 /* Hero with background photo */
-.hero-photo-bg{
+hero-photo-bg{
   position:relative;
   min-height:100vh;
   overflow:hidden;
   display:flex;
   align-items:center;
+  background:linear-gradient(135deg, #0a1628 0%, #1a2a4a 40%, #0d1f3c 100%);
 }
-.hero-photo-bg .hero-bg{
-  position:absolute;inset:0;z-index:0;
-}
-.hero-photo-bg .hero-bg img{
-  width:100%;height:100%;object-fit:cover;
-  filter:brightness(0.25) blur(3px);
-  transform:scale(1.05);
-}
-.hero-photo-bg .hero-overlay{
-  position:absolute;inset:0;z-index:1;
-  background:linear-gradient(135deg, 
-    rgba(10,22,40,.85) 0%, 
-    rgba(20,35,60,.75) 35%, 
-    rgba(15,30,50,.8) 65%, 
-    rgba(10,18,35,.9) 100%);
-}
+
 .hero-photo-bg .hero-inner{position:relative;z-index:2}
 .hero-photo-bg .hero h1{color:#fff}
 .hero-photo-bg .hero-lead{color:rgba(255,255,255,.75)}
@@ -1801,6 +1787,17 @@ footer{
 .gallery-item > div{display:flex;align-items:center;justify-content:center;min-height:300px}
 .gallery-item.tall > div{min-height:500px}
 .gallery-item img{display:none}
+
+
+/* Photo showcase responsive */
+@media(max-width:768px){
+  .photo-showcase{
+    grid-template-columns:1fr !important;
+  }
+  .photo-showcase > div:first-child{
+    aspect-ratio:4/3 !important;
+  }
+}
 
 </style>
 </head>
@@ -1859,10 +1856,7 @@ footer{
 
 <!-- 🎬 HERO -->
 <section class="hero hero-photo-bg">
-  <div class="hero-bg">
-    <img src="images/gruz-truck-hero.jpg" alt="ГрузСервіс" loading="eager">
-  </div>
-  <div class="hero-overlay"></div>
+
 
   <div class="hero-inner">
     <div>
@@ -2085,6 +2079,44 @@ footer{
       </div>
     </div>
 
+  </div>
+</section>
+
+
+
+<!-- 📸 ФОТО ГРУЗ-СЕРВІС -->
+<section class="section" style="padding-top:0;">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num"><span></span>● ГРУЗ·СЕРВІС</div>
+      <h2 class="section-title">Ваш вантаж — <span class="accent">у надійних руках</span></h2>
+    </div>
+    <p class="section-desc">Професійна команда, власний автопарк, відповідальний підхід до кожного замовлення.</p>
+  </div>
+  <div class="photo-showcase reveal" style="display:grid;grid-template-columns:1.5fr 1fr;gap:24px;align-items:center;max-width:1400px;margin:0 auto;">
+    <div style="position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/9;box-shadow:0 25px 60px -12px rgba(0,0,0,.5);">
+      <img src="images/gruz-truck-hero.jpg" alt="ГрузСервіс — вантажівка" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:40px;background:linear-gradient(transparent,rgba(0,0,0,.85));">
+        <span style="background:var(--accent);color:#fff;padding:4px 14px;border-radius:20px;font-size:13px;font-weight:700;">🚛 ДО 3 ТОН</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div style="background:var(--bg-2);border:1px solid var(--line);padding:28px;border-radius:16px;transition:transform .3s;">
+        <div style="font-size:28px;margin-bottom:10px;">⚡</div>
+        <h3 style="font-family:var(--font-d);font-size:18px;margin-bottom:8px;">Виїзд за 30 хв</h3>
+        <p style="color:var(--text-dim);font-size:14px;line-height:1.5;">Дзвоніть — і ми вже в дорозі. Терміновий виїзд по Кам'янському.</p>
+      </div>
+      <div style="background:var(--bg-2);border:1px solid var(--line);padding:28px;border-radius:16px;transition:transform .3s;">
+        <div style="font-size:28px;margin-bottom:10px;">📦</div>
+        <h3 style="font-family:var(--font-d);font-size:18px;margin-bottom:8px;">Пакуємо самі</h3>
+        <p style="color:var(--text-dim);font-size:14px;line-height:1.5;">Коробки, стрейч-плівка, захист меблів — все включено.</p>
+      </div>
+      <div style="background:var(--bg-2);border:1px solid var(--line);padding:28px;border-radius:16px;transition:transform .3s;">
+        <div style="font-size:28px;margin-bottom:10px;">🛡️</div>
+        <h3 style="font-family:var(--font-d);font-size:18px;margin-bottom:8px;">Без пошкоджень</h3>
+        <p style="color:var(--text-dim);font-size:14px;line-height:1.5;">Кожна ваша річ доїде в цілості — гарантуємо.</p>
+      </div>
+    </div>
   </div>
 </section>
 
