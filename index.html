@@ -1800,7 +1800,6 @@ hero-photo-bg{
 .gallery-item.tall > div{min-height:500px}
 .gallery-item img{display:none}
 
-
 /* Photo showcase responsive */
 @media(max-width:768px){
   .photo-showcase{
@@ -1810,7 +1809,6 @@ hero-photo-bg{
     aspect-ratio:4/3 !important;
   }
 }
-
 
 @media(max-width:768px){
   .truck-showcase img{min-height:280px;object-fit:cover}
@@ -1830,9 +1828,6 @@ hero-photo-bg{
   }
 }
 
-
-
-
 /* Only hero section is dark blue */
 .hero.hero-photo-bg {
   background:linear-gradient(160deg, #060d18 0%, #0a1830 30%, #0d1f40 60%, #0a1630 100%) !important;
@@ -1847,8 +1842,6 @@ hero-photo-bg{
 .hero.hero-photo-bg .hero-stat-label { color:rgba(255,255,255,.65) !important; }
 .hero.hero-photo-bg .btn-ghost { color:#fff !important; border-color:rgba(255,255,255,.3) !important; }
 
-
-
 /* Hero stays special dark blue */
 .hero.hero-photo-bg{
   background:linear-gradient(160deg, #0a1628 0%, #112240 40%, #0a192f 100%) !important;
@@ -1860,7 +1853,6 @@ hero-photo-bg{
 .hero.hero-photo-bg .h1-row .stroke{
   -webkit-text-stroke:2px rgba(255,255,255,.8) !important;color:transparent !important
 }
-
 
 /* Hero: special dark section on light page */
 .hero.hero-photo-bg{
@@ -1881,81 +1873,39 @@ hero-photo-bg{
 .hero.hero-photo-bg .btn-ghost{color:#fff !important;border-color:rgba(255,255,255,.3) !important;background:rgba(0,0,0,.2) !important}
 
 
-/* === HERO FIX === */
-.hero__image,
-.hero-image,
-[class*="hero"] img {
-	max-width: 100%;
-	height: auto;
-	object-fit: cover;
-	display: block;
+/* === HERO TITLE MOBILE === */
+@media (max-width: 480px) {
+  .hero h1,
+  .hero__title,
+  .hero__title h1 {
+    font-size: clamp(2.8rem, 11vw, 3.8rem) !important;
+    line-height: 1.0 !important;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+    white-space: normal;
+    text-align: left !important;
+    display: block;
+  }
+
+  /* Кожен рядок заголовку окремо — великий і не злипається */
+  .hero__title span,
+  .hero h1 span,
+  .hero h1 em {
+    display: block;
+    width: 100%;
+  }
 }
 
-@media (max-width: 768px) {
-	.hero__image,
-	.hero-image,
-	[class*="hero"] img {
-		display: none;
-	}
-
-	.hero__title,
-	.hero-title,
-	[class*="hero"] h1 {
-		font-size: clamp(2.2rem, 8vw, 3rem);
-		line-height: 1.1;
-		word-break: break-word;
-	}
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero h1,
+  .hero__title,
+  .hero__title h1 {
+    font-size: clamp(3.2rem, 9vw, 4.5rem) !important;
+    line-height: 1.0 !important;
+    text-align: left !important;
+  }
 }
-/* === END HERO FIX === */
-
-/* === MOBILE HERO FIX === */
-@media (max-width: 768px) {
-	.hero {
-		text-align: left !important;
-		padding-left: 20px !important;
-		padding-right: 20px !important;
-	}
-	.hero .hero-inner,
-	.hero .hero-inner > div {
-		text-align: left !important;
-	}
-	.hero h1,
-	.hero h1 span,
-	.hero .h1-row span {
-		font-size: clamp(1.8rem, 7.5vw, 2.6rem) !important;
-		line-height: 1.05 !important;
-		word-break: break-word !important;
-		letter-spacing: -.02em !important;
-	}
-	.hero .hero-lead,
-	.hero p {
-		text-align: left !important;
-		font-size: 0.95rem !important;
-		line-height: 1.5 !important;
-	}
-	.hero .hero-badges {
-		justify-content: flex-start !important;
-		margin-bottom: 24px !important;
-	}
-	.hero .hero-ctas {
-		justify-content: flex-start !important;
-		margin-top: 20px !important;
-	}
-	.hero .hero-stats {
-		justify-content: flex-start !important;
-		margin-left: 0 !important;
-		margin-right: 0 !important;
-	}
-}
-@media (max-width: 400px) {
-	.hero h1,
-	.hero h1 span,
-	.hero .h1-row span {
-		font-size: clamp(1.5rem, 7vw, 1.8rem) !important;
-	}
-}
-/* === END MOBILE HERO FIX === */
-
+/* === END HERO TITLE MOBILE === */
 </style>
 </head>
 <body>
@@ -2013,7 +1963,6 @@ hero-photo-bg{
 
 <!-- 🎬 HERO -->
 <section class="hero hero-photo-bg">
-
 
   <div class="hero-inner">
     <div>
@@ -2113,7 +2062,6 @@ hero-photo-bg{
     </div>
   </div>
 </section>
-
 
 <section class="section" id="services">
   <div class="section-head reveal">
@@ -2267,11 +2215,7 @@ hero-photo-bg{
   </div>
 </section>
 
-
-
 <!-- 📸 ФОТО ГРУЗ-СЕРВІС -->
-
-
 
 <!-- 🚛 ОКРЕМА МАШИНА ДО 3 ТОН -->
 <section class="features-bg" id="truck">
@@ -2294,7 +2238,6 @@ hero-photo-bg{
 </section>
 
 <!-- 📸 ГАЛЕРЕЯ -->
-
 
 <!-- 💎 FEATURES -->
 <section class="features-bg" id="features">
