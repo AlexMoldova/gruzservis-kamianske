@@ -1907,6 +1907,57 @@ hero-photo-bg{
 	}
 }
 /* === END HERO FIX === */
+
+/* === MOBILE HERO FIX === */
+@media (max-width: 768px) {
+	/* Вирівнювання по лівому краю */
+	.hero .hero__content,
+	.hero__badges,
+	.hero__title,
+	.hero__description,
+	.hero__buttons {
+		text-align: left !important;
+	}
+
+	/* Розмір заголовку */
+	.hero__title h1,
+	.hero__title,
+	.hero h1 {
+		font-size: clamp(2.4rem, 9vw, 3.2rem) !important;
+		line-height: 1.05 !important;
+		word-break: break-word;
+	}
+
+	/* Опис — лівий край, нормальний розмір */
+	.hero__description,
+	.hero p {
+		text-align: left !important;
+		font-size: 1rem !important;
+		line-height: 1.6 !important;
+	}
+
+	/* Кнопки — в ряд, не по центру */
+	.hero__buttons {
+		justify-content: flex-start !important;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	/* Флоат-кнопки месенджерів — менші, не перекривають текст */
+	.floating-buttons,
+	.social-float,
+	[class*="float"] {
+		right: 8px !important;
+		bottom: 80px !important;
+	}
+	.floating-buttons a,
+	[class*="float"] a {
+		width: 42px !important;
+		height: 42px !important;
+	}
+}
+/* === END MOBILE HERO FIX === */
+
 </style>
 </head>
 <body>
@@ -2721,8 +2772,6 @@ document.querySelectorAll('.hero-stat-num').forEach(el=>{
   obs.observe(el);
 });
 
-// Diagnose horizontal overflow
-(function(){var e=document.body.getElementsByTagName('*'),w=window.innerWidth,d='';for(var i=0;i<e.length;i++){var r=e[i].getBoundingClientRect();if(r.right>w+1||r.left<-1){d+='<div style="background:red;color:#fff;padding:4px 8px;margin:2px 0;font-size:12px">['+e[i].tagName.toLowerCase()+(e[i].id?'#'+e[i].id:'')+(e[i].className?' .'+e[i].className.replace(/ /g,'.'):'')+'] right='+Math.round(r.right)+' left='+Math.round(r.left)+' width='+e[i].offsetWidth+'</div>'}}if(d){var p=document.createElement('div');p.style.cssText='position:fixed;top:0;left:0;z-index:99999;background:#000;color:#0f0;padding:10px;font-family:monospace;font-size:11px;max-height:80vh;overflow:auto';p.innerHTML='<b style="color:#f00">Overflow elements:</b><br>'+d;document.body.appendChild(p)}})();
 </script>
 
 </body>
