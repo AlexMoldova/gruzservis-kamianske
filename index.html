@@ -1880,6 +1880,33 @@ hero-photo-bg{
 .hero.hero-photo-bg .hero-stats{border-color:rgba(255,255,255,.15) !important}
 .hero.hero-photo-bg .btn-ghost{color:#fff !important;border-color:rgba(255,255,255,.3) !important;background:rgba(0,0,0,.2) !important}
 
+
+/* === HERO FIX === */
+.hero__image,
+.hero-image,
+[class*="hero"] img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.hero__image,
+	.hero-image,
+	[class*="hero"] img {
+		display: none;
+	}
+
+	.hero__title,
+	.hero-title,
+	[class*="hero"] h1 {
+		font-size: clamp(2.2rem, 8vw, 3rem);
+		line-height: 1.1;
+		word-break: break-word;
+	}
+}
+/* === END HERO FIX === */
 </style>
 </head>
 <body>
