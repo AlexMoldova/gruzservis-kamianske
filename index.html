@@ -1760,7 +1760,7 @@ footer{
 .reveal-scale.visible{opacity:1;transform:scale(1)}
 
 /* Hero with background photo */
-hero-photo-bg{
+.hero-photo-bg{
   position:relative;
   min-height:100vh;
   overflow:hidden;
@@ -1795,11 +1795,6 @@ hero-photo-bg{
   -webkit-text-stroke:2px rgba(255,255,255,.7);
   color:transparent;
 }
-/* Gallery placeholders */
-.gallery-item > div{display:flex;align-items:center;justify-content:center;min-height:300px}
-.gallery-item.tall > div{min-height:500px}
-.gallery-item img{display:none}
-
 /* Photo showcase responsive */
 @media(max-width:768px){
   .photo-showcase{
@@ -1829,32 +1824,7 @@ hero-photo-bg{
 }
 
 /* Only hero section is dark blue */
-.hero.hero-photo-bg {
-  background:linear-gradient(160deg, #060d18 0%, #0a1830 30%, #0d1f40 60%, #0a1630 100%) !important;
-}
-.hero.hero-photo-bg .hero h1,
-.hero.hero-photo-bg .hero h1 .h1-row,
-.hero.hero-photo-bg .hero h1 .h1-row span { color:#fff !important; }
-.hero.hero-photo-bg .hero h1 .stroke { -webkit-text-stroke:2px rgba(255,255,255,.7) !important; color:transparent !important; }
-.hero.hero-photo-bg .hero h1 .accent { color:var(--accent) !important; }
-.hero.hero-photo-bg .hero-lead { color:rgba(255,255,255,.85) !important; }
-.hero.hero-photo-bg .hero-badge { color:rgba(255,255,255,.85) !important; border-color:rgba(255,255,255,.3) !important; }
-.hero.hero-photo-bg .hero-stat-label { color:rgba(255,255,255,.65) !important; }
-.hero.hero-photo-bg .btn-ghost { color:#fff !important; border-color:rgba(255,255,255,.3) !important; }
-
 /* Hero stays special dark blue */
-.hero.hero-photo-bg{
-  background:linear-gradient(160deg, #0a1628 0%, #112240 40%, #0a192f 100%) !important;
-}
-.hero.hero-photo-bg h1,.hero.hero-photo-bg h1 span{color:#fff !important}
-.hero.hero-photo-bg .hero-lead{color:#a8c8f0 !important}
-.hero.hero-photo-bg .hero-badge{color:#c9d1d9 !important;border-color:rgba(255,255,255,.2) !important}
-.hero.hero-photo-bg .hero-stat-label{color:#8b949e !important}
-.hero.hero-photo-bg .h1-row .stroke{
-  -webkit-text-stroke:2px rgba(255,255,255,.8) !important;color:transparent !important
-}
-
-/* Hero: special dark section on light page */
 .hero.hero-photo-bg{
   background:linear-gradient(160deg, #0a1628 0%, #112240 40%, #0a192f 100%) !important;
 }
@@ -2058,7 +2028,7 @@ hero-photo-bg{
     <!-- 🎨 ФОТО-СЦЕНА -->
     <div class="hero-visual">
       <div class="hero-photo-wrap">
-        <div style="width:100%;height:100%;background:linear-gradient(135deg,#0d2137,#1a3a5f);border-radius:20px;"></div>
+        <img src="images/gruz-truck-hero.jpg" alt="ГрузСервіс — вантажівка Кам'янське" class="hero-photo" style="width:100%;height:100%;object-fit:cover;">
         <div class="hero-photo-badges">
           <span class="hero-photo-badge">24/7</span>
           <span class="hero-photo-badge accent">ВИЇЗД ЗА 30 ХВ</span>
@@ -2177,8 +2147,9 @@ hero-photo-bg{
       <div class="service-card-num">03</div>
       <div class="service-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
+          <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v-2"/>
+          <circle cx="8.5" cy="7" r="4"/>
+          <polyline points="17 11 23 11 20 14"/>
         </svg>
       </div>
       <h3>Переїзди<br>будинків/дач</h3>
@@ -2267,8 +2238,6 @@ hero-photo-bg{
   </div>
 </section>
 
-<!-- 📸 ФОТО ГРУЗ-СЕРВІС -->
-
 <!-- 🚛 ОКРЕМА МАШИНА ДО 3 ТОН -->
 <section class="features-bg" id="truck">
   <div style="padding:80px 32px;text-align:center;max-width:900px;margin:0 auto;">
@@ -2280,9 +2249,9 @@ hero-photo-bg{
       Потрібна окрема машина для вашого переїзду? Надаємо авто вантажопідйомністю <strong>до 3 тонн</strong>.
       Ідеально для: квартирні переїзди, вивіз сміття, доставка меблів, перевезення будматеріалів.
     </p>
-    <a href="tel:+380933715458" style="display:inline-flex;align-items:center;gap:16px;padding:22px 48px;background:#ff6f00;color:#fff;font-weight:700;font-size:20px;border-radius:60px;transition:transform .3s,box-shadow .3s;box-shadow:0 8px 30px -8px rgba(255,111,0,.6);text-decoration:none;" 
-       onmouseover="this.style.transform='scale(1.08)';this.style.boxShadow='0 16px 40px -8px rgba(255,111,0,.8)'" 
-       onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 8px 30px -8px rgba(255,111,0,.6)'">
+    <a href="tel:+380933715458" style="display:inline-flex;align-items:center;gap:16px;padding:22px 48px;background:var(--accent);color:#fff;font-weight:700;font-size:20px;border-radius:60px;transition:transform .3s,box-shadow .3s;box-shadow:0 8px 30px -8px rgba(var(--accent-glow),.6);text-decoration:none;" 
+       onmouseover="this.style.transform='scale(1.08)';this.style.boxShadow='0 16px 40px -8px rgba(var(--accent-glow),.8)'" 
+       onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 8px 30px -8px rgba(var(--accent-glow),.6)'">
       📞 Замовити машину — +38 (093) 371-54-58
     </a>
     <p style="color:var(--text-dim);font-size:14px;margin-top:24px;">Працюємо 24/7 · Без передоплати · Виїзд за 30 хв</p>
@@ -2418,7 +2387,7 @@ hero-photo-bg{
       <div class="testimonial reveal">
         <div class="testimonial-stars">
           <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
-          <svg viewBox="0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
           <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z"/></svg>
